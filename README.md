@@ -41,3 +41,41 @@ copy file1 file2       # Copy file
 xcopy source dest /E/H # Copy directories (with subfolders, hidden files)
 robocopy src dest /MIR # Mirror entire folders (robust copy)
 ```
+## 🔹 Disk & File Check
+```bash
+chkdsk C: /f /r                      # Check and repair disk
+sfc /scannow                         # Repair system files
+DISM /Online /Cleanup-Image /RestoreHealth
+```
+
+## 🔹 Networking
+```bash
+ipconfig /all            # Detailed network info
+ping example.com         # Test connectivity
+tracert example.com      # Trace route to destination
+netstat -ano             # Show active connections + process IDs
+netstat -b               # Show which apps use these connections
+```
+
+## 🔹 Process & Task Management
+```bash
+tasklist                 # Show running processes
+taskkill /PID <pid> /F   # Kill process by PID
+taskkill /IM app.exe /F  # Kill process by name
+```
+
+## 🔹 User & Access
+```bash
+whoami                                   # Show current user
+net user                                 # List users
+net user <username> <password> /add      # Create new user
+net localgroup administrators <user> /add
+```
+
+## 🔹 System Maintenance
+```bash
+cleanmgr              # Disk Cleanup
+msconfig              # System Configuration
+eventvwr              # Event Viewer
+services.msc          # Manage services
+```
