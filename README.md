@@ -30,3 +30,14 @@ winver                 # Show Windows version
 systeminfo             # Detailed system info (OS, uptime, RAM, etc.)
 hostname               # Display computer name
 driverquery            # List installed drivers
+```
+
+## 🔹 File System & Navigation
+```bash
+dir                    # List files in current directory
+cd <path>              # Change directory
+tree                   # Show folder structure
+copy file1 file2       # Copy file
+xcopy source dest /E/H # Copy directories (with subfolders, hidden files)
+robocopy src dest /MIR # Mirror entire folders (robust copy)
+```
